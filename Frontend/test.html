@@ -3,7 +3,17 @@
         <script src="apiCaller.js"></script>
     </head>
     <body>
-        <button onclick="userAction()">button</button>
-        <div id="outputNumber"></div>
+        <form>
+            <label for="number">Number</label><br>
+            <input type="integer" id="number" name="number"><br>
+            <label for="inputBase">input base</label><br>
+            <input type="integer" id="inputBase" name="inputBase"><br>
+            <label for="outputBase">output base</label><br>
+            <input type="integer" id="outputBase" name="outputBase"><br>
+          </form> 
+        <button onclick="userAction(number.value, inputBase.value, outputBase.value)">button</button>
+        <p>
+            output number is: <div id="outputNumber"></div>
+        </p>
     </body>
 </html>
